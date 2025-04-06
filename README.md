@@ -26,11 +26,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+   > JSON Web Tokens contain a cryptographic signature and are stateless due to being stored client-side. Sessions do not come equipped with cryptographic signatures and are not stateless because they rely on the server's memory. By using JWT, authentication can occur locally instead of having to communicate with the server's database if you were using Sessions.
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+   > bcrypt allows for password hashing to help enhance password security. You can adjust the amount of time the password is hashed to ensure greater security. When you try to authenticate a user, bcrypt will unhash the password and compare it to what's been entered in the field.
 
 3. How are unit tests different from integration and end-to-end testing.
 
+   > With unit tests you are testing to ensure the functionality of individual modules/functions. For integration testing, you are testing to ensure that multiple pieces of your application are properly working. Finally, for end-to-end testing, you are ensuring that your application is working how it should from the very beginning (such as login/register) and throughout the entire application. When conducting end-to-end testing, you are interacting with the application just like a user would.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+   > To utilize Test Driven Development, you write your test cases before you have enough code written to complete the test. The reasoning behind TDD is that it may allow you to write cleaner code that functions exactly how it should. It may also ensure you have to do less refactoring because you already know what you're testing against and what your outcome should be. You already have test cases established and now you need to finish your code to pass those tests.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
